@@ -22,7 +22,8 @@
         "source": "github",
         "repo": "radzio/github-review"
       },
-      "category": "productivity"
+      "category": "productivity",
+      "version": "v0.0.1"
     }
   ]
 }
