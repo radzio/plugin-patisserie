@@ -35,6 +35,16 @@
       },
       "category": "productivity",
       "version": "v0.0.1"
+    },
+    {
+      "name": "deguster",
+      "description": "Taste your mobile app before serving — UI testing via Maestro CLI and mobilecli with E2E testing, cross-platform parity, flow generation, and nav map discovery",
+      "source": {
+        "source": "github",
+        "repo": "radzio/deguster"
+      },
+      "category": "testing",
+      "version": "v0.0.1"
     }
   ]
 }
