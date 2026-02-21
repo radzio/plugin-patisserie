@@ -9,13 +9,19 @@
     {
       "name": "gitlab-review",
       "description": "Triage unresolved GitLab MR review comments — analyze, plan, and reply",
-      "source": "github:radzio/gitlab-review",
+      "source": {
+        "source": "github",
+        "repo": "radzio/gitlab-review"
+      },
       "category": "productivity"
     },
     {
       "name": "github-review",
       "description": "Triage GitHub PR review comments — analyze, plan, and reply",
-      "source": "github:radzio/github-review",
+      "source": {
+        "source": "github",
+        "repo": "radzio/github-review"
+      },
       "category": "productivity"
     }
   ]
