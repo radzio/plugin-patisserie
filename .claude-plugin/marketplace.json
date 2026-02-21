@@ -33,7 +33,8 @@
         "source": "github",
         "repo": "radzio/jira-levain"
       },
-      "category": "productivity"
+      "category": "productivity",
+      "version": "v0.0.1"
     }
   ]
 }
