@@ -25,6 +25,15 @@
       },
       "category": "productivity",
       "version": "v0.0.1"
+    },
+    {
+      "name": "jira-levain",
+      "description": "Starter for your next bake — gather Jira ticket context from hierarchy and Confluence, then prepare an implementation plan",
+      "source": {
+        "source": "github",
+        "repo": "radzio/jira-levain"
+      },
+      "category": "productivity"
     }
   ]
 }

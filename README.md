@@ -8,6 +8,7 @@ Artisanal Claude Code plugins, freshly baked by Baker.
 |--------|----------|---------|-------------|
 | [gitlab-review](https://github.com/radzio/gitlab-review) | GitLab | `/triage` | Triage unresolved MR review comments — analyze, plan, and reply |
 | [github-review](https://github.com/radzio/github-review) | GitHub | `/triage` | Triage PR review comments — analyze, plan, and reply |
+| [jira-levain](https://github.com/radzio/jira-levain) | Jira | `/levain` | Gather Jira ticket context and prepare an implementation plan |
 
 ## Install
 
@@ -22,6 +23,7 @@ claude plugin marketplace add https://github.com/radzio/plugin-patisserie
 ```bash
 claude plugin install gitlab-review
 claude plugin install github-review
+claude plugin install jira-levain
 ```
 
 ## Prerequisites
@@ -29,3 +31,5 @@ claude plugin install github-review
 - [jq](https://jqlang.github.io/jq/) — `brew install jq`
 - [glab](https://gitlab.com/gitlab-org/cli) — `brew install glab` (for GitLab plugin)
 - [gh](https://cli.github.com/) — `brew install gh` (for GitHub plugin)
+- Jira MCP server — e.g., [mcp-atlassian](https://github.com/sooperset/mcp-atlassian) (for jira-levain)
+- Confluence MCP server (optional) — often bundled with Jira MCP (for jira-levain)
