@@ -11,17 +11,17 @@ Artisanal Claude Code plugins, freshly baked by Baker.
 
 ## Install
 
-### All plugins (via marketplace)
+### Step 1: Add the marketplace
 
 ```bash
-claude plugin install github:radzio/plugin-patisserie
+claude plugin marketplace add https://github.com/radzio/plugin-patisserie
 ```
 
-### Individual plugins
+### Step 2: Install plugins
 
 ```bash
-claude plugin install github:radzio/gitlab-review
-claude plugin install github:radzio/github-review
+claude plugin install gitlab-review
+claude plugin install github-review
 ```
 
 ## Prerequisites
