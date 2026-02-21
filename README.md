@@ -1,6 +1,6 @@
 # Plugin Patisserie
 
-Artisanal Claude Code plugins, freshly baked by Baker.
+Artisanal Claude Code plugins, slow-proofed to perfection.
 
 ## Plugins
 

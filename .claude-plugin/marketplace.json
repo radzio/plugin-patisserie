@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "plugin-patisserie",
-  "description": "Artisanal Claude Code plugins, freshly baked by Baker",
+  "description": "Artisanal Claude Code plugins, slow-proofed to perfection",
   "owner": {
     "name": "radzio"
   },
