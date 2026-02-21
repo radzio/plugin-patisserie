@@ -4,7 +4,7 @@
 
 Plugin Patisserie is a **marketplace/registry for Claude Code plugins**. It acts as a centralized catalog that users can add to their Claude Code CLI, enabling them to discover and install plugins by name. The marketplace itself does not contain plugin code -- it points to external GitHub repositories where the actual plugins live.
 
-The project is authored by `radzio` and currently hosts two productivity plugins focused on triaging code review comments (one for GitLab MRs, one for GitHub PRs).
+The project is authored by `radzio` and currently hosts four plugins across two categories (productivity and testing).
 
 ## Project Structure
 
@@ -51,7 +51,8 @@ The manifest at `.claude-plugin/marketplace.json` follows the schema at `https:/
 | `plugins[].description` | What the plugin does |
 | `plugins[].source.source` | Source type (e.g., `"github"`) |
 | `plugins[].source.repo` | Source repository in `owner/repo` format |
-| `plugins[].category` | Plugin category (e.g., `"productivity"`) |
+| `plugins[].version` | Plugin version string (e.g., `"v0.0.1"`) |
+| `plugins[].category` | Plugin category (e.g., `"productivity"`, `"testing"`) |
 
 ### Currently Registered Plugins
 
@@ -59,8 +60,10 @@ The manifest at `.claude-plugin/marketplace.json` follows the schema at `https:/
 |------|------|---------------|-----------------|
 | `gitlab-review` | `radzio/gitlab-review` | `/triage` | GitLab |
 | `github-review` | `radzio/github-review` | `/triage` | GitHub |
+| `jira-levain` | `radzio/jira-levain` | `/levain` | Jira / Confluence |
+| `deguster` | `radzio/deguster` | `/deguster:*` | iOS / Android |
 
-Both plugins expose a `/triage` command that analyzes unresolved review comments, plans responses, and helps reply.
+The review plugins (`gitlab-review`, `github-review`) expose a `/triage` command that analyzes unresolved review comments, plans responses, and helps reply. `jira-levain` exposes `/levain` to gather Jira ticket context from hierarchy and Confluence, then prepare an implementation plan. `deguster` exposes multiple slash commands (`/deguster:test`, `/deguster:gen`, etc.) for mobile UI testing via Maestro CLI and mobilecli.
 
 ## Development Conventions
 
@@ -90,5 +93,5 @@ This repo has no build step, test suite, or runtime. It is a static registry. To
 - When adding a new plugin, update **both** `.claude-plugin/marketplace.json` (add the plugin entry) **and** `README.md` (add a row to the plugins table and any new prerequisites).
 - The actual plugin code must live in its own separate GitHub repository -- only a reference goes here.
 - Keep the `$schema` reference in the manifest so tooling can validate the structure.
-- Plugin categories should match the Claude Code marketplace taxonomy (currently `"productivity"` is the only category in use).
+- Plugin categories should match the Claude Code marketplace taxonomy (currently `"productivity"` and `"testing"` are the categories in use).
 - Prerequisites for individual plugins (like `glab` or `gh`) should be documented in the README under the Prerequisites section.
