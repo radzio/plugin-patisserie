@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "plugin-patisserie",
+  "description": "Artisanal Claude Code plugins, freshly baked by Baker",
+  "owner": {
+    "name": "radzio"
+  },
+  "plugins": [
+    {
+      "name": "gitlab-review",
+      "description": "Triage unresolved GitLab MR review comments — analyze, plan, and reply",
+      "source": "github:radzio/gitlab-review",
+      "category": "productivity"
+    },
+    {
+      "name": "github-review",
+      "description": "Triage GitHub PR review comments — analyze, plan, and reply",
+      "source": "github:radzio/github-review",
+      "category": "productivity"
+    }
+  ]
+}
