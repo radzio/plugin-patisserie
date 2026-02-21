@@ -13,7 +13,8 @@
         "source": "github",
         "repo": "radzio/gitlab-review"
       },
-      "category": "productivity"
+      "category": "productivity",
+      "version": "v0.0.1"
     },
     {
       "name": "github-review",
