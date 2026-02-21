@@ -31,5 +31,4 @@ claude plugin install jira-levain
 - [jq](https://jqlang.github.io/jq/) — `brew install jq`
 - [glab](https://gitlab.com/gitlab-org/cli) — `brew install glab` (for GitLab plugin)
 - [gh](https://cli.github.com/) — `brew install gh` (for GitHub plugin)
-- Jira MCP server — e.g., [mcp-atlassian](https://github.com/sooperset/mcp-atlassian) (for jira-levain)
-- Confluence MCP server (optional) — often bundled with Jira MCP (for jira-levain)
+- Jira & Confluence MCP — `claude plugin add atlassian` or [mcp-atlassian](https://github.com/sooperset/mcp-atlassian) (for jira-levain)
